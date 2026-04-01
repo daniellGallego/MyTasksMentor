@@ -1,0 +1,9 @@
+<Solution>
+  <Folder Name="/docs/" />
+  <Folder Name="/src/" />
+  <Folder Name="/tests/" />
+  <Project Path="src/MyTasksMentor.API/MyTasksMentor.API.csproj" Id="7fb4550d-b756-4a18-a32f-cc983a0cdf81" />
+  <Project Path="src/MyTasksMentor.Application/MyTasksMentor.Application.csproj" Id="62abdcb7-68e0-47c3-b75c-d5fed386e62a" />
+  <Project Path="src/MyTasksMentor.Domain/MyTasksMentor.Domain.csproj" Id="4dab9770-b63d-47e8-843b-5d4ac27af58b" />
+  <Project Path="src/MyTasksMentor.Infrastructure/MyTasksMentor.Infrastructure.csproj" Id="d8a6a979-f7d3-4fa7-8856-e05cb17814f1" />
+</Solution>
