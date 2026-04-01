@@ -21,6 +21,17 @@ builder.Services.AddHttpClient<AiService>();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowVue", policy =>
+    {
+        policy
+            .WithOrigins("http://localhost:5173")
+            .AllowAnyHeader()
+            .AllowAnyMethod();
+    });
+});
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -34,6 +45,7 @@ app.UseMiddleware<ExceptionMiddleware>();
 
 app.UseAuthorization();
 
+app.UseCors("AllowVue");
 app.MapControllers();
 
 app.Run();
